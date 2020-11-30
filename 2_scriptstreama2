@@ -1,0 +1,10 @@
+#!/bin/bash
+
+cp /tmp/dato2.txt /etc/httpd/conf.d/streama.192.168.50.11.com.conf
+
+
+systemctl restart httpd
+
+setenforce 0
+
+systemctl start streama
